@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="./img/icons/clipboard-solid.svg">
+    <title>Notizblock</title>
+</head>
+
+<body onload="render()">
+    <header>
+        <img src="./img/icons/clipboard-regular.svg">
+        <h1>Notizen</h1>
+    </header>
+
+
+    <div onclick="showInput()" id="textBox" class="text_box">
+        <input id="input" placeholder="Notiz eingeben..." type="text">
+
+    </div>
+    <div id="inputContainer" class="input_container">
+        <input id="inputTitle" class="input_title" placeholder="Titel...">
+        <input id="inputNote" class="input_note" placeholder="Notiz...">
+        <button onclick="addNote()" class="button">Hinzugügen</button>
+        <button onclick="hideInput()" class="button">Schließen</button>
+    </div>
+    <div class="notesContainer">
+        <h1>Meine Notizen:</h1>
+
+
+        <div class="pinnedNotes" id="addedNotes"> </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
