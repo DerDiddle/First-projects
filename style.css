@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.d-none {
+    display: none !important;
+}
+
+header {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    left: 50px;
+    top: 32px;
+}
+
+header img {
+    height: 60px;
+
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 164px;
+
+}
+
+.text_box input {
+    width: 550px;
+    height: 64px;
+    font-size: 24px;
+    border-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 6px 8px 14px 0px lightgray;
+
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 164px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input_title {
+    border-bottom-style: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-color: lightgray;
+    font-size: 24px;
+}
+
+.input_note {
+    border-top-style: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: lightgray;
+    font-size: 24px;
+}
+
+.input_container input {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    height: 64px;
+}
+
+.notesContainer {
+    position: relative;
+    top: 180px;
+    height: 669px;
+    background-color: lightblue;
+}
+
+.notesContainer h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.pinnedNotes {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-left: 32px;
+}   
+
+.pinnedNotes img {
+    height: 16px;
+    cursor: pointer;
+
+    
+}
+
+.noteContent {
+    border: dotted 2px black;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+
+}
+.seperator{
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    width: 95%;
+    background-color: black;
+    margin: 8px;
+}
